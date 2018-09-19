@@ -16,6 +16,12 @@ def hello():
 def suma(l1, l2):
     print("Suma:", l1 + l2)
     
+def suma2(a, b):
+    """
+    Funkcja sumuje dwie liczby i zwraca wynik
+    """
+    return a + b
+    
 def roznica(l1, l2):
     print("Różnica", l1 - l2)
     
@@ -28,13 +34,15 @@ def iloraz(l1, l2):
         
 
 def main(args):
+    #Zmienne lokalne, o zasięgu lokalnym 
     a =int(input("Podaj 1. liczbę: "))
     b =int(input("Podaj 2. liczbę: "))
     print(a)
     print(b)
     
+    print("Suma:", suma2(a, b))
     # print ("Suma:", a + b)
-    suma(a, b)
+    #suma(a, b)
     #print ("Różnica:", a - b)
     roznica(a, b)
     #print ("Iloczyn", a * b)
