@@ -8,6 +8,10 @@ def main(args):
     start =int(input("Podaj 1. liczbę: "))
     stop =int(input("Podaj 2. liczbę: "))
     
+    while start >= stop: #Jeżeli start niewiekszy od stop, wydrukuj bład i pobierz ponownie drugą liczbę 
+        print("Za mała 2. liczba!")
+        stop =int(input("Podaj 2. liczbę: "))
+        
     if start>= stop:
         print("Błędne dane!")
         exit(0)
