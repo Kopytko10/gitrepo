@@ -6,9 +6,14 @@
 
 
 def main(args):
-    a =int(input("Podaj liczbę: "))
-    while a + a < 75:
-            a = int(input("Podaj liczbę: "))
+    suma = 0
+    
+    while suma <= 75:
+        liczba =int(input("Podaj liczbę: "))
+        suma = suma + liczba
+    else:
+        print("Suma liczb",suma)
+            
             
             
     return 0
