@@ -23,12 +23,10 @@ def prostokat2(a, b, znak, znak2):
 def choinka(h, znak):
     for i in range(h):
         for j in range(h):
-            if j == 0 or j == h - 1:
-                print(znak, end='')
-                
-            else: 
-                print(end='')
-
+            if j == 0:
+                print(i * znak, end='')
+            
+        print()
 def main(args):
     
     a =int(input("Podaj długość boku: "))
