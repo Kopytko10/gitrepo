@@ -9,6 +9,7 @@ def liczby2():
     nie powtarzają się cyfry. Na koniec zwraca ilość takich liczb.
     wykluczone liczby: 11,22,33
     """
+    
     ile = 0 #licznik liczb
     for i in range(1, 10): #pętla dziesiątek
         for j in range(10): #pętla jdności 
@@ -17,17 +18,28 @@ def liczby2():
                 ile = ile + 1 # zliczenie liczb
                     
     return ile
+    
+    
+def liczby3():
     """
     funkcja drukuje wszystkie liczby 3-cyfrowe, w których 
     nie powtarzają się cyfry. Na koniec zwraca ilość takich liczb.
     wykluczone liczby: 110,222,333,334
     """
-def liczby3():
-        
-
-
+    ile = 0
+    for i in range(1, 10): 
+        for j in range(10):
+            for k in range(10):
+                if i != j != k != i:
+                    print("{}{}{} ".format(i, j, k), end=" ")
+                    ile = ile + 1 
+    return ile
+                    
 def main(args):
-    print("\n\nLiczby 2-cyfrowych:",liczby2())
+    print("\n\nLiczb 2-cyfrowych:",liczby2())
+    print(" ")
+    print(" ")
+    print("\n\nLiczb 3-cyfrowych:",liczby3())
     return 0
 
 if __name__ == '__main__':
