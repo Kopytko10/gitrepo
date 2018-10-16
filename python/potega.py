@@ -10,15 +10,21 @@ def potega_it(a, n):
     for i in range(n):
         
         wynik = wynik * a
-        print(wynik)
+        #print(wynik)
     return wynik
      
 
 
 def main(args):
-    a =int(input("Podaj podstawę: "))
-    n =int(input("wykładnik: "))
-    print("Potęga {} do {} wynosi {}".format(a,n, potega_it(a, n)))
+    #a =int(input("Podaj podstawę: "))
+    #n =int(input("wykładnik: "))
+    #print("Potęga {} do {} wynosi {}".format(a,n, potega_it(a, n)))
+    assert(potega_it(1,1) == 1)
+    assert(potega_it(2,1) == 2)
+    assert(potega_it(2,2) == 4)
+    assert(potega_it(0,4) == 0)
+    assert(potega_it(1,0) == 1)
+    assert(potega_it(4,0) == 1)
     return 0
 
 if __name__ == '__main__':
