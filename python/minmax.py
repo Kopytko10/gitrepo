@@ -30,6 +30,15 @@ def minimum(liczby):
     return najm 
     
 def maksimum(liczby):
+    najw = liczby[0]
+    for i in liczby:
+        if najw < i:
+            najw = i
+    return najw 
+    
+    
+    
+    
     
 def main(args):
     # ~min, max = minmax()
@@ -37,7 +46,7 @@ def main(args):
     # ~print('Największa:', max)
     liczby = losuj(20, 0, 50)
     print('Najmniejsza: ', minimum(liczby))
-    
+    print('Największa: ', maksimum(liczby))
     return 0
     
 
