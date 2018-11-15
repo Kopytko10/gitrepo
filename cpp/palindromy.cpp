@@ -7,8 +7,17 @@
 #include <string.h>
 using namespace std;
 
-bool palindrom(w[], int r){
-    ;
+bool palindrom(char w[], int r){
+    bool czy_palindrom = true; 
+    for(int i = 0; i < r / 2 ; i++) {
+        if  ( w[i] != w[r - 1 - i]) {
+            czy_palindrom = false;
+            break;
+    }
+}
+        
+    
+    return czy_palindrom;
 }
 
 
@@ -23,8 +32,8 @@ int main(int argc, char **argv)
      
     if (palindrom(wyraz, strlen(wyraz))) 
         cout << "Palindrom";
-    else
-        cout << " Nie palindrom";
+        else
+        cout << " Nie palindrom! :-(";
 	return 0;
 }
 
