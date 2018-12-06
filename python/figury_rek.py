@@ -15,7 +15,7 @@ def figura_rek(bok, kat, ile):
     turtle.forward(bok)
     turtle.right(kat)
     if ile > 0:
-        figura_rek(bok - 10 , kat, ile - 1)
+        figura_rek(bok, kat, ile - 1)
 
 def main(args):
     turtle.setup(800, 600)
@@ -23,7 +23,7 @@ def main(args):
     turtle.speed(0)
     turtle.begin_fill()
     
-    figura_rek(200, 120,3 )
+    figura_rek(200, 120, 3 )
     
     turtle.end_fill()
     turtle.done()
