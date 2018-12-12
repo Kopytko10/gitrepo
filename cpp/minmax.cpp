@@ -10,7 +10,7 @@ using namespace std;
 void wypelnij(int tab[],int rozmiar) {
     cout << "Wprowadź " << rozmiar << " liczb: " << endl;
     for(int i=0; i < rozmiar; i++) {
-        cin >> tab[i];
+        tab[i] = rand() % 101; // liczby od 0 do 100
     }
 }
 
