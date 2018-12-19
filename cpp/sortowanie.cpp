@@ -1,30 +1,40 @@
 /*
  * sortowanie.cpp
  */
+using namespace std;
 
 
 #include <iostream>
 #include <cstdlib>
-using namespace std;
 
-void wypelnij(int tab[],int rozmiar) {
-    srand(time(NULL)); //inicjacja generatora liczb pseudolosowych 
-    cout << "Wprowadź " << rozmiar << " liczb: " << endl;
-    for(int i=0; i < rozmiar; i++) {
+void wypelnij(int tab[], int roz) {
+    srand(time(NULL)); // inicjacja generatora liczb pseudolosowych 
+    
+    cout << "Wprowadź rozmiar" << roz << "liczb: " << endl;
+    for(int i=0; i<roz; i++) {
         tab[i] = rand() % 101; // liczby od 0 do 100
-    }
+        
+        } 
+    
 }
 
-void drukuj(int tab[],int rozmiar) {
-    for(int i=0; i < rozmiar; i++) {
-        cout << tab[i] << " ";
-    }
+void drukuj(int tab[], int roz) {
+    for(int i=0; i<roz; i++) {
+        cout << tab[i] << " " << endl;
+        
+        } 
+    
 }
 
 
-int main(int argc, char **argv)
-{
-	
-	return 0;
+void zamien1(int a, int b) {
+    cout << a << " " << b << endl;
+    int tmp =a;
+    a = b;
+    b = tmp;
+    
+   
+    
+    
+    
 }
-
