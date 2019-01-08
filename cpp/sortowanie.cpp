@@ -49,11 +49,23 @@ void sort_selection(int tab[], int n){
         for (j = i + 1; j < n; j++)
             if (tab[j] < tab[k])
                 k = j;
-    }   
+    }  
     zamien1(tab[i], tab[k]);
 }
 
-
+void sort_insert(int tab[], int n){
+    int i, k, el;
+    for (i = 1; i < n; i++){
+        el = tab[i];
+        k = i - 1; //indeks , z którą porównujemy element 
+        while(k>=0 && tab[k]>el) {
+            tab[k+1] = tab[k];
+            k--;            
+        }  
+       tab[k+1]=el;
+       
+    }
+}
 
 int main(int argc, char **argv)
 {
@@ -63,7 +75,8 @@ int main(int argc, char **argv)
     drukuj(tab, roz);
     cout << endl << endl;
     //sort_bubble(tab, roz);
-    sort_selection(tab, roz);
+    //sort_selection(tab, roz);
+    sort_insert(tab, roz);
     drukuj(tab, roz);
     //zamien1(5, 10);
     cout << endl;
