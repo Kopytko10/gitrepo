@@ -30,12 +30,11 @@ def main(args):
     if a > b:
         if a > c:
             print("Maks:", a)
-        else:
-            print("Maks:", c)
     else:
         if b > c:
-            print("Maks:", b)
-    
+                print("Maks:", b)
+        else:
+            print("Maks:", c)
     return 0
 
 if __name__ == '__main__':
